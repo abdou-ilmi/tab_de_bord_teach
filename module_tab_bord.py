@@ -174,7 +174,7 @@ def get_soumission_par_niveau(df):
     niveau_counts = df['Niveau'].value_counts()
 
     # Créer le diagramme en barres avec des barres plus fines
-    plt.bar(niveau_counts.index, niveau_counts.values, width=0.3, color=['blue', 'green'])
+    plt.bar(niveau_counts.index, niveau_counts.values, width=0.1, color=['blue', 'green'])
     # Ajouter les valeurs sur les barres
     for i, count in enumerate(niveau_counts.values):
         plt.text(i, count, str(count), ha='center', va='bottom',fontsize=12, fontweight="bold")
@@ -208,7 +208,7 @@ def get_soumission_par_region(df):
     couleurs_regions = ['#d62728', '#9467bd', '#ff7f0e', '#17becf', '#bcbd22', '#e377c2']
 
     # Créer le diagramme en barres avec des couleurs différentes pour chaque région
-    plt.bar(region_counts.index, region_counts.values, width=0.3, color=couleurs_regions[:len(region_counts)])
+    plt.bar(region_counts.index, region_counts.values, width=0.1, color=couleurs_regions[:len(region_counts)])
 
     # Ajouter les valeurs sur les barres
     for i, count in enumerate(region_counts.values):
@@ -323,7 +323,7 @@ def graphique_soumissions_par_region_et_par_niveau(region_selectionnee, df_prim_
         couleurs = ['lightcoral', 'mediumpurple'] * ((len(enqueteur_counts) + 1) // 2)
 
         # Créer le diagramme en barres avec les couleurs en alternance
-        plt.bar(enqueteur_counts.index, enqueteur_counts.values, width=0.3, color=couleurs[:len(enqueteur_counts)])
+        plt.bar(enqueteur_counts.index, enqueteur_counts.values, width=0.1, color=couleurs[:len(enqueteur_counts)])
 
         # Ajouter les valeurs sur les barres
         for i, count in enumerate(enqueteur_counts.values):
@@ -364,7 +364,7 @@ def graphique_soumissions_par_niveau_reg(niveau_selectionnee, df):
         couleurs = ['lightcoral', 'mediumpurple'] * ((len(enqueteur_counts) + 1) // 2)
 
         # Créer le diagramme en barres avec les couleurs en alternance
-        plt.bar(enqueteur_counts.index, enqueteur_counts.values, width=0.3, color=couleurs[:len(enqueteur_counts)])
+        plt.bar(enqueteur_counts.index, enqueteur_counts.values, width=0.1, color=couleurs[:len(enqueteur_counts)])
 
         # Ajouter les valeurs sur les barres
         for i, count in enumerate(enqueteur_counts.values):
