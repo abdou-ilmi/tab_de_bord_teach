@@ -240,8 +240,8 @@ def section_une_a():
     
     # Afficher le graphique dans la deuxième colonne
     with col2:
-        st.pyplot(get_soumission_par_niveau(df_prim_col), width=800, height=600)
-    
+       # st.pyplot(get_soumission_par_niveau(df_prim_col), width=800, height=600)
+        st.pyplot(get_soumission_par_niveau(df_prim_col))
            # progress_bar.text(f"{pourcentage_soumissions:.2f}%")
 
 def section_une_b():
@@ -338,8 +338,8 @@ def section_deux_a():
     
     # Afficher le graphique dans la deuxième colonne
     with col2:
-        st.pyplot(get_soumission_par_region(df_presc), width=800, height=600)
-    
+        #st.pyplot(get_soumission_par_region(df_presc), width=800, height=600)
+        st.pyplot(get_soumission_par_region(df_presc))
            # progress_bar.text(f"{pourcentage_soumissions:.2f}%")
 
 
