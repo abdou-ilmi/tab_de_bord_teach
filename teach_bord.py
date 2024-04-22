@@ -113,10 +113,10 @@ def main():
 
     
 
-
+     
     # Chemin vers les images
-    chemin_image1 = "/home/ilham/Documents/Teach_Eval_2/teach_tab_bord/image_ece.PNG"
-    chemin_image2 = "/home/ilham/Documents/Teach_Eval_2/teach_tab_bord/image_edu.png"
+    chemin_image1 = "/home/ilham/Documents/tab_de_bord_teach/image_ece.PNG"
+    chemin_image2 = "/home/ilham/Documents/tab_de_bord_teach/image_edu.png"
     #col1, _, col2 = st.columns([1, 1, 1])
     # Utiliser les colonnes pour ajuster l'espace entre les images
     col1, _, col2, _, col3 = st.columns([1, 2, 1, 2, 1])
