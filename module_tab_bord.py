@@ -261,7 +261,7 @@ def graphique_soumissions_par_region_et_par_CP(region_selectionnee, df):
             plt.text(i, count, str(count), ha='center', va='bottom', fontsize=12, fontweight="bold")
 
         # Ajouter des labels et un titre
-        plt.title(f'Formulaires soumis pour la région {region_selectionnee} par CP', fontweight="bold", color="black", y=1.04)
+       # plt.title(f'Formulaires soumis pour la région {region_selectionnee} par CP', fontweight="bold", color="black", y=1.04)
 
         # Supprimer les valeurs de l'axe y
         plt.tick_params(axis='y', which='both', left=False, labelleft=False)
@@ -330,7 +330,7 @@ def graphique_soumissions_par_region_et_par_niveau(region_selectionnee, df_prim_
             plt.text(i, count, str(count), ha='center', va='bottom', fontsize=12, fontweight="bold")
 
         # Ajouter des labels et un titre
-        plt.title(f'Formulaires soumis pour la région {region_selectionnee} par niveau', fontweight="bold", color="black", y=1.04)
+       # plt.title(f'Formulaires soumis pour la région {region_selectionnee} par niveau', fontweight="bold", color="black", y=1.04)
 
         # Supprimer les valeurs de l'axe y
         plt.tick_params(axis='y', which='both', left=False, labelleft=False)
@@ -371,7 +371,7 @@ def graphique_soumissions_par_niveau_reg(niveau_selectionnee, df):
             plt.text(i, count, str(count), ha='center', va='bottom', fontsize=12, fontweight="bold")
 
         # Ajouter des labels et un titre
-        plt.title(f'Formulaires soumis pour le {niveau_selectionnee}\n par région', fontweight="bold", color="black", y=1.04)
+       # plt.title(f'Formulaires soumis pour le {niveau_selectionnee}\n par région', fontweight="bold", color="black", y=1.04)
 
         # Supprimer les valeurs de l'axe y
         plt.tick_params(axis='y', which='both', left=False, labelleft=False)

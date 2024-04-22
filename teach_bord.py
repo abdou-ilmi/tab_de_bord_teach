@@ -188,7 +188,7 @@ def page_une():
    # st.header("Teach primaire et college")
     # Fonction pour récupérer les données des soumissions par agent
     vect_section_une=["Données globale", "Par région","Par niveau",
-                      "Par CP & région","Par CP"]  
+                      "Par CP/région/niveau","Par CP"]  
     # Options de navigation pour les sections de la page
     selected_section = st.sidebar.radio("Sélectionner une section",vect_section_une)
                                         
@@ -289,7 +289,7 @@ def section_une_e():
 def page_deux():
     st.header("")
 
-    vect_section_deux=["Par région", "Par CP & région","Par CP"]  
+    vect_section_deux=["Par région", "Par CP/région/niveau","Par CP"]  
     # Options de navigation pour les sections de la page
     selected_section = st.sidebar.radio("Sélectionner une section",vect_section_deux)
                                         
