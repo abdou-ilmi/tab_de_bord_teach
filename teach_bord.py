@@ -115,8 +115,8 @@ def main():
 
      
     # Chemin vers les images
-    chemin_image1 = "/home/ilham/Documents/tab_de_bord_teach/image_ece.PNG"
-    chemin_image2 = "/home/ilham/Documents/tab_de_bord_teach/image_edu.png"
+    #chemin_image1 = "/home/ilham/Documents/tab_de_bord_teach/image_ece.PNG"
+    #chemin_image2 = "/home/ilham/Documents/tab_de_bord_teach/image_edu.png"
     #col1, _, col2 = st.columns([1, 1, 1])
     # Utiliser les colonnes pour ajuster l'espace entre les images
     col1, _, col2, _, col3 = st.columns([1, 2, 1, 2, 1])
@@ -125,14 +125,14 @@ def main():
     
     # Afficher l'image 1 dans la première colonne
     with col1:
-        st.image(chemin_image1, width=100, caption='', use_column_width=False)
-     # Afficher un espace vide entre les colonnes
+        st.image("/home/ilham/Documents/tab_de_bord_teach/image_ece.PNG", width=100, caption='', use_column_width=False)
+      # Afficher un espace vide entre les colonnes
     col2.empty()   
          
     # Afficher l'image 2 dans la deuxième colonne
     with col3:
-        st.image(chemin_image2, width=100, caption='', use_column_width=False,
-                 output_format='auto')
+        st.image("/home/ilham/Documents/tab_de_bord_teach/image_edu.png", width=100, caption='', use_column_width=False,
+                  output_format='auto')
 #################################
     # col1, _, col2, _, col3 = st.columns([1, 1.5, 1, 1.5, 1])
     #  # Utiliser les colonnes pour afficher les images côte à côte
