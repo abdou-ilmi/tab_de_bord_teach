@@ -6,35 +6,10 @@ Created on Sat Apr 20 10:53:02 2024
 @author: ilham
 """
 import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import plotly.express as px
-import numpy as np
-from numpy import mean
-from numpy import std
-from numpy import asarray
-from pandas import DataFrame
-import matplotlib.pyplot as plt
-#%matplotlib inline
-from dateutil.relativedelta import relativedelta
-import seaborn as sns
-from pandas import Series, DataFrame
-from pandas import Grouper
-from matplotlib import pyplot
-import matplotlib.lines as mlines
-import matplotlib.colors as mcolors
 import requests
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
 import numpy as np
-from numpy import mean
-from numpy import std
 from module_tab_bord import get_submission_data
 from module_tab_bord import get_submission_data_presc
 from module_tab_bord import get_preparation_data

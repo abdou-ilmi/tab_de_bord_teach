@@ -6,18 +6,8 @@
 
 import requests
 import pandas as pd
-import plotly.express as px
-import dash
-#import dash_core_components as dcc
-#import dash_html_components as html
-from dash import dcc, html
-from dash.dependencies import Input, Output
-import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
 import numpy as np
-from numpy import mean
-from numpy import std
 
 
 # In[1]:
