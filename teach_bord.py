@@ -254,6 +254,7 @@ def section_une_b():
         #df_region = df_prim_col[df_prim_col['Region'] == selected_region]
         
         # Afficher le graphique en fonction de la région sélectionnée
+        st.write("<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nombre de formulaires soumis pour le primaire et le collège par région<strong>", unsafe_allow_html=True)
         st.pyplot(graphique_soumissions_par_region_et_par_niveau(selected_region, df_prim_col))
    
 def section_une_c():
@@ -264,20 +265,22 @@ def section_une_c():
     if selected_niveau:
         # Filtrer les données en fonction de la région sélectionnée
         #df_region = df_prim_col[df_prim_col['Region'] == selected_region]
-        
+        st.write(f"<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nombre de formulaires soumis pour le {selected_niveau} par région<strong>", unsafe_allow_html=True)
         # Afficher le graphique en fonction de la région sélectionnée
         st.pyplot(graphique_soumissions_par_niveau_reg(selected_niveau, df_prim_col))
 def section_une_d():
-    st.subheader("Formulaire soumis par les CP par niveau")
+    st.subheader("")
     selected_region = st.sidebar.selectbox("Choisir une région", vect_region)
     Niveau=["collège","primaire"]
     if selected_region:
         selected_niv = st.selectbox("Choisir un niveau:",Niveau )
         if selected_niv==Niveau[0]:
         # Afficher le graphique en fonction de la région sélectionnée
+            st.write(f"<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les CP du {selected_niv} affectés à la regions de  {selected_region} <strong>", unsafe_allow_html=True)
             st.pyplot(graphique_soumissions_par_region_et_par_CP(selected_region,df_col))
         elif selected_niv==Niveau[1]:
        # Afficher le graphique en fonction de la région sélectionnée
+           st.write(f"<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les CP de {selected_niv} affectés à la regions de  {selected_region} <strong>", unsafe_allow_html=True)
            st.pyplot(graphique_soumissions_par_region_et_par_CP(selected_region,df_prim))
 def section_une_e():
     st.subheader("Formualire soumis par conseiller")
@@ -289,7 +292,7 @@ def section_une_e():
 def page_deux():
     st.header("")
 
-    vect_section_deux=["Par région", "Par CP/région/niveau","Par CP"]  
+    vect_section_deux=["Par région", "Par CP/région","Par CP"]  
     # Options de navigation pour les sections de la page
     selected_section = st.sidebar.radio("Sélectionner une section",vect_section_deux)
                                         
@@ -350,6 +353,7 @@ def section_deux_b():
     if selected_region:
 
        # Afficher le graphique en fonction de la région sélectionnée
+           st.write(f"<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les CP affectés à la regions de  {selected_region} <strong>", unsafe_allow_html=True)
            st.pyplot(graphique_soumissions_par_region_et_par_CP(selected_region,df_presc))
 def section_deux_c():
     st.subheader("Formualire soumis par conseiller")
