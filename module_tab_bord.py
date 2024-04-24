@@ -41,7 +41,7 @@ def get_submission_data_presc():
 
 def get_preparation_data(df):
     ## le vecteur qui contient le ocde avec les noms de cp
-    correspondance_CP = {
+    correspondance_CP = {"300":"ABDILAHHI ARREH OMAR",
                 "301":"ABDISALAM IBRAHIM ARREYEH","302":"ABDOUKADER MED AHMED","303":"ABDOULKADER ABOUBAKER HANIFA",
                 "304":"ABDOULKADER APTION","305":"ABDOURAHMAN DAHER SAMATAR",
                 "306":"ADEN AHMED FARAH","307":"AHMED ABDILLAHI ARREH","308":"AHMED ALI ELMI",
