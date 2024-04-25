@@ -154,7 +154,7 @@ def main():
     col1, col2,col3 = st.columns([1, 1, 1])
     # Afficher le nombre d'enseignants au collège dans la première colonne
     with col1:
-        st.markdown("<span style='font-size:24px; color:blue;'>Enseignants en préscolaire:</span> <span style='font-size:24px;'>82</span>", unsafe_allow_html=True)
+        st.markdown("<span style='font-size:24px; color:blue;'>Enseignants en préscolaire:</span> <span style='font-size:24px;'>80</span>", unsafe_allow_html=True)
     
     # Afficher le nombre d'enseignants en préscolaire dans la deuxième colonne
     with col2:
