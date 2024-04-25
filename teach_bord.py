@@ -92,7 +92,7 @@ vect_region= ["Djibouti", "ALI-SABIEH", "ARTA", "DIKHIL", "OBOCK", "TADJOURAH"]
 vect_niveau=["Collège","Primaire"]
 # Nombre total de formulaires prévus
 total_formulaires =586 # Remplacez par le nombre total de formulaires prévus
-total_formulaires_pres=82
+total_formulaires_pres=80
 
 # Nombre de formulaires soumis jusqu'à présent (hypothétique, remplacez par la logique réelle)
 nombre_formulaires_soumis = len(df_prim_col) # Par exemple
